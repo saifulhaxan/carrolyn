@@ -1,10 +1,10 @@
 import React from 'react'
-import visa from "../../assets/images/visa.png";
-import masterunion from "../../assets/images/masterunion.png";
-import paypal from "../../assets/images/paypal.png";
-import visa2 from "../../assets/images/visa2.png";
-import masterunion2 from "../../assets/images/masterunion2.png";
-import footedog from "../../assets/images/footer-dog.png"
+import visa from "/images/visa.png";
+import masterunion from "/images/masterunion.png";
+import paypal from "/images/paypal.png";
+import visa2 from "/images/visa2.png";
+import masterunion2 from "/images/masterunion2.png";
+import footedog from "/images/footer-dog.png"
 
 export const Footer = () => {
 
@@ -20,7 +20,7 @@ export const Footer = () => {
 
     <div className='footer_data'>
       <div className='footer_data_top'>
-        <img src={`/src/assets/images/${cvalue.icon}.png`} />
+        <img src={`/images/${cvalue.icon}.png`} />
       </div>
       <div className='footer_data_bottom'>
         <p>{cvalue.head}</p>

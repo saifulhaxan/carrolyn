@@ -1,6 +1,6 @@
 import React from 'react'
-import quote9 from "../../assets/images/quote1.png";
-import quote6 from "../../assets/images/qoute6.png";
+import quote9 from "/images/quote1.png";
+import quote6 from "/images/qoute6.png";
 
 export const ReviewsBox = (props) => {
     return (

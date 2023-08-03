@@ -1,9 +1,9 @@
 import React from 'react'
-import facebook from "../../assets/images/facebook.png"
-import twitter from "../../assets/images/TwT.png"
-import instagram from "../../assets/images/Ig.png"
-import linkedin from "../../assets/images/Ln.png"
-import contactdog from "../../assets/images/contact-dog.png"
+import facebook from "/images/facebook.png"
+import twitter from "/images/TwT.png"
+import instagram from "/images/Ig.png"
+import linkedin from "/images/Ln.png"
+import contactdog from "/images/contact-dog.png"
 
 export const Contact = (props) => {
   const contactinfo = [
@@ -22,7 +22,7 @@ export const Contact = (props) => {
         {
           props.showImage == true ?
           <div className="contact_detail_left">
-            <img src={`/src/assets/images/${cvalue.icon}.png`} />
+            <img src={`/images/${cvalue.icon}.png`} />
           </div>
           : ''
         }

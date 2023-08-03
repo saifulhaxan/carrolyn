@@ -1,8 +1,8 @@
 import React from 'react'
 import LayoutTheme from '../Layout';
 import { SubHeader } from '../../components/SubHeader';
-import dogBanner from '../../assets/images/gallery-dog2.png'
-import authorimg from "../../assets/images/author-img.png"
+import dogBanner from '/images/gallery-dog2.png'
+import authorimg from "/images/author-img.png"
 import { About } from '../../components/About';
 import { ReviewsBox } from '../../components/Reviews';
 import Carousel from "react-multi-carousel";
@@ -75,7 +75,7 @@ export const AboutPage = () => {
 
       <div className="Feedback">
         <div class="Feedback_img_1">
-          <img src="/src/assets/images/feedback-dog.png" />
+          <img src="/images/feedback-dog.png" />
         </div>
         <div class="feedback_top">
           <h1>Our Client Feedback</h1>

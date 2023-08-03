@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react'
 import LayoutTheme from '../Layout'
 import { SubHeader } from '../../components/SubHeader'
-import dogBanner from '../../assets/images/gallery-dog2.png'
+import dogBanner from '/images/gallery-dog2.png'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Player } from 'video-react';
 import { ReviewsBox } from '../../components/Reviews'
@@ -373,9 +373,59 @@ export const BookDetailIllusrationPage = () => {
                 }
             ]
         },
+        {
+            id: 10,
+            head: "New Year of Mystery And Chaos!",
+            desc: "Well readers, this is my tenth book. I love writing. As the year comes to an end. I hope we are all having a wonderful holiday season....",
+            completedDescription: [
+                "Well readers, this is my tenth book. I love writing. As the year comes to an end. I hope we are all having a wonderful holiday season.",
+                "Marriage is a compromise. It seems that April and her husband couldn't compromise. He wouldn't take no and tracked her down.",
+                "The mystery on the cruise also brings back another person that wasn't nice. Hope you can read it to find out who came back in their life!"
+            ],
+            img: "illbook10",
+            trailer: "SpotOnMysteryAtTheDogRescue-Trailer",
+            link: "B0BM3SC3P4",
+            paperback: "12.58",
+            hardcover: "",
+            ebook: "",
+            reviews: [
+                {
+                    authorName: "Emily Wills",
+                    description: "Moving On: Welcome to a New Year of Mystery And Chaos! has captured my heart with its fascinating blend of mystery and chaos. As I delved into the story, I couldn't help but be swept away by the author's incredible storytelling.",
+                },
+                {
+                    authorName: "John Tye",
+                    description: "This book, Moving On, beautifully portrays the complexities of human relationships and the challenges that come with them. It touched my heart as I witnessed April and her husband's journey, struggling to find common ground amidst chaos.",
+                },
+                {
+                    authorName: "Sarah Michael",
+                    description: "Moving On: Welcome to a New Year of Mystery And Chaos! presents a thought-provoking narrative that delves into the intricacies of marriage and the importance of compromise. April's character arc serves as a poignant reflection of the challenges individuals face when seeking resolution in relationships.",
+                },
+                {
+                    authorName: "Michael Henry",
+                    description: "Whoa! Brace yourselves for a rollercoaster ride of emotions in Moving On! This book takes you on an exhilarating journey filled with love, heartbreak, and suspense. April and her husband's passionate yet tumultuous relationship kept me hooked from start to finish. The cruise mystery brought an element of surprise that I totally didn't see coming. An electrifying read!",
+                },
+                {
+                    authorName: "Grace Larry",
+                    description: "Moving On: Welcome to a New Year of Mystery And Chaos! is a heartwarming tale of love and redemption. The author's tender portrayal of April and her husband's struggles struck a chord with me, reminding us all that life is a journey of learning and growth. The mystery on the cruise was a delightful twist that added excitement to the narrative. A truly uplifting story!",
+                },
+                {
+                    authorName: "Jake Patterson",
+                    description: "Hey there, readers! You're in for a wild ride with Moving On! This book offers a perfect blend of chaos and mystery, making it an entertaining page-turner. April and her husband's escapades had me laughing out loud at times, and their misadventures on the cruise had me at the edge of my seat. A rollicking good time!",
+                },
+                {
+                    authorName: "Emma Wilson",
+                    description: "Moving On weaves a nostalgic tale of reminiscence and growth. April and her husband's struggle to find middle ground is portrayed with genuine emotion that resonates deeply. The mystery surrounding the cruise stirred up memories of classic whodunits, and I couldn't help but feel a sense of nostalgia. A beautifully evocative read!",
+                },
+                {
+                    authorName: "Alex Rose",
+                    description: "Moving On is an empowering story of strength and resilience. April's journey reflects the indomitable human spirit, and her refusal to be confined by circumstances is truly inspiring. The cruise mystery introduced a new layer of intrigue that held my attention throughout. An empowering read that reminds us to face life's chaos head-on.",
+                },
+            ]
+        },
     ];
     useEffect(() => {
-        illustrationbooks.forEach((item) => {
+        illustrationbooks.map((item) => {
             if (item.id == id) {
                 bookDetailData(item)
             }
@@ -403,9 +453,9 @@ export const BookDetailIllusrationPage = () => {
                     </div>
                 </div>
                 <div className='buynowdetail_right'>
-                    <img src={`/src/assets/images/${bookDetail.img}.png`} />
+                    <img src={`/images/${bookDetail.img}.png`} />
                     <Player
-                        src={`/src/assets/videos/${bookDetail.trailer}.mp4`}
+                        src={`./videos/${bookDetail.trailer}.mp4`}
                         aspectRatio="auto"
                     />
                 </div>

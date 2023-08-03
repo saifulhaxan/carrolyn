@@ -1,7 +1,7 @@
 import React from 'react'
 import LayoutTheme from '../Layout'
 import { SubHeader } from '../../components/SubHeader'
-import dogBanner from '../../assets/images/gallery-dog2.png'
+import dogBanner from '/images/gallery-dog2.png'
 import { ReviewsBox } from '../../components/Reviews'
 
 const feebackdata = [

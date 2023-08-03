@@ -1,9 +1,9 @@
 import React from 'react';
-import visa from "../../assets/images/visa.png";
-import masterunion from "../../assets/images/masterunion.png";
-import paypal from "../../assets/images/paypal.png";
-import visa2 from "../../assets/images/visa2.png";
-import masterunion2 from "../../assets/images/masterunion2.png";
+import visa from "/images/visa.png";
+import masterunion from "/images/masterunion.png";
+import paypal from "/images/paypal.png";
+import visa2 from "/images/visa2.png";
+import masterunion2 from "/images/masterunion2.png";
 import { Link } from "react-router-dom";
 
 export const BookBox = (props) => {
@@ -14,7 +14,7 @@ export const BookBox = (props) => {
         return (
           <div className={index % 2 == 0 ? 'book_card' : 'book_card_reverse'} key={index}>
             <div className='book_card_img'>
-              <img src={`/src/assets/images/${BookListing.img}.png`} alt={BookListing.head} />
+              <img src={`/images/${BookListing.img}.png`} alt={BookListing.head} />
             </div>
             <div className={index % 2 == 0 ? 'book_card_text' : 'book_card_text_reverse'}>
               <h2>{BookListing.head}</h2>

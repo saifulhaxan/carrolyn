@@ -19,7 +19,7 @@ export const Gallery = (props) => {
                     {props.GalleryData && props.GalleryData.map((image, index) => {
                         return (
                             <div className="grid__item" key={index}>
-                                <img src={`/src/assets/images/${image}`} alt="abc" />
+                                <img src={`/images/${image}`} alt="abc" />
                             </div>
                         );
                     })}

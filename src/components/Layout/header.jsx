@@ -1,7 +1,7 @@
 import React , {useState} from 'react'
 import { Link } from "react-router-dom";
-import hamburger from "../../assets/images/hamburger.png"
-import logo from "../../assets/images/logo.png"
+import hamburger from "/images/hamburger.png"
+import logo from "/images/logo.png"
 
 export const Header = () => {
 

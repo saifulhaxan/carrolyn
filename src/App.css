@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Bbagian";
-  src: url("./assets/font/bBagian.otf");
+  src: url("./font/bBagian.otf");
 }
 
 
@@ -20,9 +20,9 @@ input,textarea{
 }
 p{
   color:rgb(241, 241, 241);
-  line-height: 25px;
   font-size: 0.9vmax !important;
   text-decoration: none;
+  line-height: 30px !important;
 }
 
 
@@ -57,11 +57,12 @@ input,textarea{
   display: flex;
   flex-wrap: wrap;
   margin-top: 6rem;
-  gap: 32px;
+  gap: 20px;
+  justify-content: center;
 }
 
 .Feedbacks > div {
-  width: 48%;
+  width: 31%;
   margin-bottom: 6rem;
 }
 
@@ -113,7 +114,7 @@ h6{
 }
 
 body{
-  background: url('./assets/images/body-bg.png');
+  background: url('./images/body-bg.png');
   background-size: cover ;
   background-repeat: no-repeat;
   background-position:center;
@@ -301,8 +302,8 @@ background-color: red;
 }
 
 .Landing{
-  background: url('./assets/images/landing-bg.png');
-  background-size: 100% 80%;
+  background: url('./images/landing-bg.png');
+  background-size: 100% 90%;
   background-repeat: no-repeat;
   background-position:top;
   display: flex;
@@ -419,7 +420,7 @@ transition: 0.3s;
 
 }
 .Gallery{
-  background: url('./assets/images/gallery-bg-black.png');
+  background: url('./images/gallery-bg-black.png');
   background-size:100% 100%;
   background-repeat: no-repeat;
   background-position:center;
@@ -585,7 +586,7 @@ transition: 0.3s;
 }
 
 .book_card_img{
-  background: url("./assets/images/book-card-red.png");
+  background: url("./images/book-card-red.png");
   background-repeat: no-repeat;
   align-self: stretch;
   display: flex;
@@ -681,7 +682,7 @@ transition: 0.3s;
 
 }
 .Feedback{
-  background: url('./assets/images/gallery-bg-black.png');
+  background: url('./images/gallery-bg-black.png');
   background-size:100% 100%;
   background-repeat: no-repeat;
   background-position:center;
@@ -721,27 +722,27 @@ transition: 0.3s;
   margin-bottom: 70px;
 }
 
-.feedback_bottom{
+.feedback_bottom {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.feedback_card{
+.feedback_card {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   background-color: #e97d2e;
   text-align: center;
-  max-width: 600px;
+  max-width: 100%;
   padding: 20px;
   border-radius: 20px;
-
   transform: rotate(3deg);
   z-index: 0;
+  height: 90%;
 }
 
 .border_white{
@@ -931,7 +932,7 @@ width: 300px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10vw 10%;
+  padding: 10vw 0%;
   gap:30px;
 }
 
@@ -1029,7 +1030,7 @@ width: 300px;
   align-items: center;
 }
 .PageHeader{
-  background: url('./assets/images/aboutpage-mainhead-bg.png');
+  background: url('./images/aboutpage-mainhead-bg.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
@@ -1063,7 +1064,7 @@ width: 300px;
 
 @media screen and (max-width:400px){
   .PageHeader{
-      background: url('./assets/images/pageheader-mobile-bg.png');
+      background: url('./images/pageheader-mobile-bg.png');
       padding: 120px 0;
       background-size: 100% 100%;
   }
@@ -1079,7 +1080,7 @@ width: 300px;
 }
 
 .footer_top{
-  background: url('./assets/images/footer-bg.png');
+  background: url('./images/footer-bg.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
@@ -1136,7 +1137,7 @@ width: 300px;
 @media screen and (max-width:852px){
 .footer_top{
   flex-direction: column-reverse;    
-  background: url('./assets/images/footer-mobile-bg.png');
+  background: url('./images/footer-mobile-bg.png');
   padding: 17vw 0 2vw 0 !important;
   gap:20px;
 }
@@ -1159,7 +1160,7 @@ width: 300px;
 }
 
 .Feedbacks .feedback_card {
-  background-color: #626262;
+  background-color: #000;
 }
 
 @media screen and (max-width:450px){
@@ -1200,4 +1201,9 @@ ul.slider.animated {
 
 .book_card:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+
+.buynowdetail_left p {
+  margin-bottom: 20px;
 }

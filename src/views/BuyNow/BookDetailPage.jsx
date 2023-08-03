@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react'
 import LayoutTheme from '../Layout'
 import { SubHeader } from '../../components/SubHeader'
-import dogBanner from '../../assets/images/gallery-dog2.png'
+import dogBanner from '/images/gallery-dog2.png'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Player } from 'video-react';
 import { ReviewsBox } from '../../components/Reviews'
@@ -267,7 +267,7 @@ export const BookDetailPage = () => {
         },
     ];
     useEffect(() => {
-        bookDataArray.forEach((item) => {
+        bookDataArray.map((item) => {
             if (item.id == id) {
                 bookDetailData(item)
             }
@@ -295,9 +295,9 @@ export const BookDetailPage = () => {
                     </div>
                 </div>
                 <div className='buynowdetail_right'>
-                    <img src={`/src/assets/images/${bookDetail.img}.png`} />
+                    <img src={`/images/${bookDetail.img}.png`} />
                     <Player
-                        src={`/src/assets/videos/${bookDetail.trailer}.mp4`}
+                        src={`./videos/${bookDetail.trailer}.mp4`}
                         aspectRatio="auto"
                     />
                 </div>

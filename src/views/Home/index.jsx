@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import LayoutTheme from '../Layout'
 import { Banner } from '../../components/Banner'
-import landingdog from "../../assets/images//dog-landing.png"
-import authorimg from "../../assets/images/author-img.png"
+import landingdog from "/images//dog-landing.png"
+import authorimg from "/images/author-img.png"
 import { About } from '../../components/About'
 import { Gallery } from '../../components/Gallery'
-import dog1 from "../../assets/images/gallery-dog-1.png"
-import dog2 from "../../assets/images/gallery-dog2.png"
+import dog1 from "/images/gallery-dog-1.png"
+import dog2 from "/images/gallery-dog2.png"
 import { BookBox } from '../../components/BookBox'
 import { ReviewsBox } from '../../components/Reviews'
 import Carousel from "react-multi-carousel";
@@ -44,6 +44,7 @@ const bookDataObject = [
     paperback: "8.99",
     hardcover: "",
     ebook: "3.99",
+    categoryLink: 'book-detail'
   },
   {
     id: 2,
@@ -55,6 +56,7 @@ const bookDataObject = [
     paperback: "11.99",
     hardcover: "28.95",
     ebook: "3.99",
+    categoryLink: 'book-detail'
   },
   {
     id: 3,
@@ -66,6 +68,7 @@ const bookDataObject = [
     paperback: "10.50",
     hardcover: "",
     ebook: "9.99",
+    categoryLink: 'book-detail'
   },
   {
     id: 4,
@@ -77,6 +80,7 @@ const bookDataObject = [
     paperback: "9.50",
     hardcover: "",
     ebook: "5.55",
+    categoryLink: 'book-detail'
   },
   {
     id: 5,
@@ -88,6 +92,7 @@ const bookDataObject = [
     paperback: "11.99",
     hardcover: "",
     ebook: "0.00",
+    categoryLink: 'book-detail'
   },
   {
     id: 6,
@@ -99,6 +104,7 @@ const bookDataObject = [
     paperback: "9.99",
     hardcover: "",
     ebook: "",
+    categoryLink: 'book-detail'
   },
   {
     id: 7,
@@ -110,6 +116,7 @@ const bookDataObject = [
     paperback: "7.99",
     hardcover: "",
     ebook: "4.99",
+    categoryLink: 'book-detail'
   },
 ];
 
@@ -201,7 +208,7 @@ export const Home = () => {
 
         <div className="Feedback">
           <div class="Feedback_img_1">
-            <img src="/src/assets/images/feedback-dog.png" />
+            <img src="/images/feedback-dog.png" />
           </div>
           <div class="feedback_top">
             <h1>Our Client Feedback</h1>

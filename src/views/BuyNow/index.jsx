@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { SubHeader } from '../../components/SubHeader'
-import dogBanner from '../../assets/images/contact-dog.png'
+import dogBanner from '/images/contact-dog.png'
 import LayoutTheme from '../Layout'
 import { BookBox } from '../../components/BookBox'
 
@@ -209,6 +209,23 @@ const illustrationbooks = [
     ebook: "",
     categoryLink: 'book-detail-illustration'
   },
+  {
+    id: 10,
+    head: "New Year of Mystery And Chaos!",
+    desc: "Well readers, this is my tenth book. I love writing. As the year comes to an end. I hope we are all having a wonderful holiday season....",
+    completedDescription: [
+        "Well readers, this is my tenth book. I love writing. As the year comes to an end. I hope we are all having a wonderful holiday season.",
+        "Marriage is a compromise. It seems that April and her husband couldn't compromise. He wouldn't take no and tracked her down.",
+        "The mystery on the cruise also brings back another person that wasn't nice. Hope you can read it to find out who came back in their life!"
+    ],
+    img: "illbook10",
+    trailer: "SpotOnMysteryAtTheDogRescue-Trailer",
+    link: "B0BM3SC3P4",
+    paperback: "12.58",
+    hardcover: "",
+    ebook: "",
+    categoryLink: 'book-detail-illustration'
+},
 ];
 
 export const BuyNow = () => {
