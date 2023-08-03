@@ -67,8 +67,6 @@ export const AboutPage = () => {
       <About
         title="About Author"
         description={AboutData}
-        btnTxt="Read More"
-        link="/about"
         img={authorimg}
 
       />

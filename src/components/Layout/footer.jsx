@@ -17,7 +17,7 @@ export const Footer = () => {
   ]
 
   const footerdataarr = footerdata.map(cvalue => <>
-    {console.log(cvalue.icon)}
+
     <div className='footer_data'>
       <div className='footer_data_top'>
         <img src={`/src/assets/images/${cvalue.icon}.png`} />

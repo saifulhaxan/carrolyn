@@ -32,16 +32,38 @@ p{
 }
 input,textarea{
   font-size: 1.5vmax !important;
+  font-family: Merriweather,serif;
+  text-decoration: none!important
 }
 .btn{
   font-size: 1.2vmax !important;
+  font-family: Merriweather,serif;
+  text-decoration: none !important
 }
 .btn-black{
   font-size: 1.2vmax !important;
+  font-family: Merriweather,serif;
+  text-decoration: none!important
 }
 }
 
 
+.react-multi-carousel-track {
+  padding: 6rem 0;
+}
+
+
+.Feedbacks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+  gap: 32px;
+}
+
+.Feedbacks > div {
+  width: 48%;
+  margin-bottom: 6rem;
+}
 
 
 h1,h2,h3,h4,h5,h6{
@@ -107,7 +129,10 @@ body{
   cursor: pointer;
   border:1px solid black;
   color: black !important;
+  font-family: Merriweather,serif;
+  text-decoration: none !important
 }
+
 
 .btn:hover{
   transform: translateY(-10px);
@@ -722,7 +747,7 @@ transition: 0.3s;
 .border_white{
   border: 2px solid white;
   transform: rotate(-3deg);
-  max-width: 600px;
+  max-width: 100%;
   border-radius: 20px;
 
   
@@ -1125,6 +1150,16 @@ width: 300px;
 .footer_dog_img img{
   font-size: 10vmax;
 }
+
+
+.Feedbacks > div {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+}
+
+.Feedbacks .feedback_card {
+  background-color: #626262;
 }
 
 @media screen and (max-width:450px){

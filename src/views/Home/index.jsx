@@ -16,7 +16,6 @@ import { Contact } from '../../components/Contact'
 
 
 
-
 const AboutData = [
   "As a passionate reader and author, I understand the importance of catering to specific interests and providing personalized experiences through literature. That is why I am delighted to present to you my latest creation—an exceptional addition to the world of personalized dog books for adults.",
 
@@ -167,7 +166,7 @@ export const Home = () => {
           title="About Author"
           description={AboutData}
           btnTxt="Read More"
-          link="/about"
+          link="/about-us"
           img={authorimg}
 
         />

@@ -19,7 +19,7 @@ export const BookBox = (props) => {
             <div className={index % 2 == 0 ? 'book_card_text' : 'book_card_text_reverse'}>
               <h2>{BookListing.head}</h2>
               <p>{BookListing.desc}</p>
-              {BookListing.link && <Link to={`/book-detail/${BookListing.id}`}><button className='btn'>Read More</button></Link>}
+              {BookListing.link && <Link to={`/${BookListing.categoryLink}/${BookListing.id}`}><button className='btn'>Read More</button></Link>}
               <div className='book_card_text_payment'>
                 <img src={visa} alt="visa" />
                 <img src={paypal} alt="paypal" />

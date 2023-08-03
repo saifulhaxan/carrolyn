@@ -16,6 +16,7 @@ const bookDataArray = [
     paperback: "8.99",
     hardcover: "",
     ebook: "3.99",
+    categoryLink: 'book-detail'
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const bookDataArray = [
     paperback: "11.99",
     hardcover: "28.95",
     ebook: "3.99",
+    categoryLink: 'book-detail'
   },
   {
     id: 3,
@@ -38,6 +40,7 @@ const bookDataArray = [
     paperback: "10.50",
     hardcover: "",
     ebook: "9.99",
+    categoryLink: 'book-detail'
   },
   {
     id: 4,
@@ -49,6 +52,7 @@ const bookDataArray = [
     paperback: "9.50",
     hardcover: "",
     ebook: "5.55",
+    categoryLink: 'book-detail'
   },
   {
     id: 5,
@@ -60,6 +64,7 @@ const bookDataArray = [
     paperback: "11.99",
     hardcover: "",
     ebook: "0.00",
+    categoryLink: 'book-detail'
   },
   {
     id: 6,
@@ -71,6 +76,7 @@ const bookDataArray = [
     paperback: "9.99",
     hardcover: "",
     ebook: "",
+    categoryLink: 'book-detail'
   },
   {
     id: 7,
@@ -82,6 +88,7 @@ const bookDataArray = [
     paperback: "7.99",
     hardcover: "",
     ebook: "4.99",
+    categoryLink: 'book-detail'
   },
 ];
 
@@ -99,7 +106,7 @@ const illustrationbooks = [
     paperback: "9.99",
     hardcover: "",
     ebook: "3.99",
-
+    categoryLink: 'book-detail-illustration'
 
 
   },
@@ -113,6 +120,7 @@ const illustrationbooks = [
     paperback: "",
     hardcover: "",
     ebook: "3.99",
+    categoryLink: 'book-detail-illustration'
 
 
 
@@ -127,6 +135,7 @@ const illustrationbooks = [
     paperback: "9.00",
     hardcover: "",
     ebook: "3.99",
+    categoryLink: 'book-detail-illustration'
   },
   {
     id: 4,
@@ -138,6 +147,7 @@ const illustrationbooks = [
     paperback: "",
     hardcover: "",
     ebook: "3.99",
+    categoryLink: 'book-detail-illustration'
   },
   {
     id: 5,
@@ -149,6 +159,7 @@ const illustrationbooks = [
     paperback: "9.99",
     hardcover: "",
     ebook: "3.49",
+    categoryLink: 'book-detail-illustration'
   },
   {
     id: 6,
@@ -160,6 +171,7 @@ const illustrationbooks = [
     paperback: "",
     hardcover: "",
     ebook: "3.49",
+    categoryLink: 'book-detail-illustration'
   },
   {
     id: 7,
@@ -171,6 +183,7 @@ const illustrationbooks = [
     paperback: "",
     hardcover: "",
     ebook: "3.49",
+    categoryLink: 'book-detail-illustration'
   },
   {
     id: 8,
@@ -182,6 +195,7 @@ const illustrationbooks = [
     paperback: "9.99",
     hardcover: "",
     ebook: "3.99",
+    categoryLink: 'book-detail-illustration'
   },
   {
     id: 9,
@@ -193,6 +207,7 @@ const illustrationbooks = [
     paperback: "14.50",
     hardcover: "",
     ebook: "",
+    categoryLink: 'book-detail-illustration'
   },
 ];
 

@@ -28,6 +28,7 @@ export const Header = () => {
            <Link to="/about-us"><h6 onClick={()=>{setIsNavExpanded(false)}}>About Me</h6></Link>
            <Link to="/buynow"><h6 onClick={()=>{setIsNavExpanded(false)}}>Buy Now</h6></Link>
            <Link to="/gallery"><h6 onClick={()=>{setIsNavExpanded(false)}}>Gallery</h6></Link>
+           <Link to="/reviews"><h6 onClick={()=>{setIsNavExpanded(false)}}>Reviews</h6></Link>
           </div>
           </div>:""
         }
@@ -37,6 +38,7 @@ export const Header = () => {
            <Link to="/about-us"><p>About Me</p></Link>
            <Link to="/buynow"><p>Buy Now</p></Link>
            <Link to="/gallery"><p>Gallery</p></Link>
+           <Link to="/reviews"><p>Reviews</p></Link>
         </div>
         < div className='navbar_right'>
         <Link to="/contact-us"> <button className='btn'>Contact Us</button></Link>
