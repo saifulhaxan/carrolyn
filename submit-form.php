@@ -1,13 +1,16 @@
-
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $name = sanitize_input($_POST["name"]);
-    $email = sanitize_input($_POST["email"]);
-    $subject = sanitize_input($_POST["subject"]);
-    $message = sanitize_input($_POST["message"]);
+$data = file_get_contents("php://input");
+$post=json_decode($data);
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ 
+    $name = sanitize_input($post->name);
+    $email = sanitize_input($post->email);
+    $subject = sanitize_input($post->subject);
+    $message = sanitize_input($post->message);
 
 
-    $to = "hojag34363@mliok.com";
+    $to = "carolynn1949@gmail.com";
     $subject = preg_replace('/\r|\n/', '', $subject);
 
     $headers = "From: $email\r\n";

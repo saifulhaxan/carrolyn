@@ -31,6 +31,7 @@ export const Contact = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(formData);
 
     try {
       // Send form data to the PHP script using Axios (replace 'your_php_script.php' with your actual PHP script URL)
