@@ -1207,3 +1207,26 @@ ul.slider.animated {
 .buynowdetail_left p {
   margin-bottom: 20px;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pagination > button {
+  padding: 13px;
+  font-size: 25px;
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+button[disabled] {
+  background-color: #d26f2d;
+  border: 1px solid #000;
+}

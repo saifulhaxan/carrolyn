@@ -188,6 +188,7 @@ export const Home = () => {
           GalleryData={GalleryImages}
           btnTxt="Explore More"
           img={dog2}
+          link="/gallery"
 
         />
         { /* book section */}
