@@ -34,7 +34,7 @@ export const Contact = (props) => {
 
     try {
       // Send form data to the PHP script using Axios (replace 'your_php_script.php' with your actual PHP script URL)
-      await axios.post('./carrolynn/submit-form.php', formData);
+      await axios.post('submit-form.php', formData);
       alert('Form submitted successfully!');
       // Optionally, reset the form after successful submission
       setFormData({ name: '', email: '', subject: '' , message: '' });
