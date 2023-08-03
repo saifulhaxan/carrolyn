@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react';
+import axios from 'axios'; 
 import facebook from "/images/facebook.png"
 import twitter from "/images/TwT.png"
 import instagram from "/images/Ig.png"
@@ -14,6 +15,34 @@ export const Contact = (props) => {
     },
   ];
 
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+   
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Send form data to the PHP script using Axios (replace 'your_php_script.php' with your actual PHP script URL)
+      await axios.post('./carrolynn/submit-form.php', formData);
+      alert('Form submitted successfully!');
+      // Optionally, reset the form after successful submission
+      setFormData({ name: '', email: '', subject: '' , message: '' });
+    } catch (error) {
+      alert('Error submitting form.');
+      console.error(error);
+    }
+  };
 
 
   const contactinfoarr = contactinfo.map((cvalue) => (
@@ -59,11 +88,11 @@ export const Contact = (props) => {
           Feel free to drop us a line with any inquiries or collaboration opportunities. We're always excited to explore new ideas and possibilities. Your message is important to us, and we will make sure to respond as soon as possible. Thank you for visiting our website!
         </p>
         <div className="contact_form">
-          <form >
-            <input type="text" placeholder="Enter Your Full Name" required />
-            <input type="email" placeholder="Enter Your Email Address" required />
-            <input type="text" placeholder="Enter Your Subject" required />
-            <textarea placeholder="Type Your Message Here!" rows="10" required />
+          <form onSubmit={handleSubmit}>
+            <input type="text" name='name' placeholder="Enter Your Full Name" value={formData.name} onChange={handleChange} required />
+            <input type="email" name='email' placeholder="Enter Your Email Address" value={formData.email} onChange={handleChange} required  />
+            <input type="text" name='subject' placeholder="Enter Your Subject" required value={formData.subject} onChange={handleChange}/>
+            <textarea placeholder="Type Your Message Here!" rows="10" name='message' required value={formData.message} onChange={handleChange}/>
             <button type="submit" className="btn">Send Your Message</button>
           </form>
 
