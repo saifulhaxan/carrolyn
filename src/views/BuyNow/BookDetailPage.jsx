@@ -290,8 +290,8 @@ export const BookDetailPage = () => {
                     <div className='BuyNowDetail_pricing'>
                         {bookDetail.paperback === "" ? <></> : <><a href={`https://www.amazon.com/gp/product/${bookDetail.link}`}><span>Paperback - ${bookDetail.paperback} (BUY FROM AMAZON)</span></a></>}
                         {/* <a href={`https://www.amazon.com/gp/product/${bookDetail.link}`}><span>Paperback - ${bookDetail.paperback} (BUY FROM AMAZON)</span></a> */}
-                        {bookDetail.Ebook === "" ? <></> : <><a href={`https://www.amazon.com/gp/product/${bookDetail.link}`}><span>E-Book - ${bookDetail.Ebook} (BUY FROM AMAZON)</span></a></>}
-                        {bookDetail.Hardcover === "" ? <></> : <>    <a href={`https://www.amazon.com/gp/product/${bookDetail.link}`}><span>Hardcover - ${bookDetail.Hardcover}</span></a></>}
+                        {bookDetail.ebook === "" ? <></> : <><a href={`https://www.amazon.com/gp/product/${bookDetail.link}`}><span>E-Book - ${bookDetail.ebook} (BUY FROM AMAZON)</span></a></>}
+                        {bookDetail.hardcover === "" ? <></> : <>    <a href={`https://www.amazon.com/gp/product/${bookDetail.link}`}><span>Hardcover - ${bookDetail.hardcover}</span></a></>}
                     </div>
                 </div>
                 <div className='buynowdetail_right'>
