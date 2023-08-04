@@ -13,6 +13,9 @@ import { ReviewsBox } from '../../components/Reviews'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Contact } from '../../components/Contact'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 
 
 
@@ -146,7 +149,6 @@ const feebackdata = [
 
 
 export const Home = () => {
-
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -216,34 +218,53 @@ export const Home = () => {
             <p>Discover what our readers are saying about our captivating dog books. Dive into heartfelt testimonials that showcase the transformative power of our stories, bringing joy and enlightenment to dog lovers worldwide</p>
           </div>
 
-          <Carousel
-            responsive={responsive}
-            swipeable={false}
-            draggable={false}
-            showDots={true}
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-            autoPlay={true}
-            autoPlaySpeed={3000}
-            keyBoardControl={true}
-            customTransition="all .5"
-            transitionDuration={3000}
-          >
+          <Swiper
+            navigation={true}
+            spaceBetween={50}
+            slidesPerView={2}
+            loop={true}
+            pagination={{ clickable: true }}
+            modules={[Autoplay, Pagination, Navigation]}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              400: {
+                slidesPerView: 1,
+              },
+              639: {
+                slidesPerView: 1,
+              },
+              865: {
+                slidesPerView: 2,
+              },
+            }}
+            className="mySwiper">
             {
               feebackdata && feebackdata.map((ReviewData, index) => {
                 console.log(ReviewData);
                 return (
-                  <ReviewsBox
-                    key={index}
-                    title={ReviewData.name}
-                    description={ReviewData.desc}
-                  />
+                  <SwiperSlide>
+                    <ReviewsBox
+                      key={index}
+                      title={ReviewData.name}
+                      description={ReviewData.desc}
+                    />
+                  </SwiperSlide>
                 );
               })
             }
-          </Carousel>
+          </Swiper>
+          <div className='viewMore'>
+            <Link to="/reviews" className="btn">Read More</Link>
+          </div>
         </div>
         <div className='ContactPage'>
+
           <Contact />
         </div>
 

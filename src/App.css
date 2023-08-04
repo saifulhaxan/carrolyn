@@ -1181,23 +1181,9 @@ ul.slider.animated {
 /* custom-carousel.css */
 
 /* Set the width of each carousel item to 50% */
-.carousel .slide {
-  width: 50%;
-  min-width: 50% !important;
+.swiper {
+  padding: 4rem 0px !important;
 }
-
-/* Show two carousel items at the same time */
-.carousel .slider-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-/* Optional: Adjust the height of the carousel */
-.carousel .slider-wrapper img {
-  height: auto;
-  max-height: 300px; /* Adjust the height as needed */
-}
-
 
 .book_card:nth-child(even) {
   flex-direction: row-reverse;
@@ -1229,4 +1215,23 @@ ul.slider.animated {
 button[disabled] {
   background-color: #d26f2d;
   border: 1px solid #000;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #000 !important;
+}
+
+.swiper-pagination-bullet {
+  background: #e97d2e !important;
+  opacity: .5 !important
+  ;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important
+}
+
+.viewMore {
+  text-align: center;
+  padding-top: 4rem;
 }
