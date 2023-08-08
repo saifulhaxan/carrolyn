@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import LayoutTheme from '../Layout';
 import { SubHeader } from '../../components/SubHeader';
 import dogBanner from '/images/gallery-dog2.png'
@@ -57,6 +57,9 @@ const responsive = {
 };
 
 export const AboutPage = () => {
+  useEffect(() => {
+    document.title = 'About Us | The Best Books for Dog Lovers'; 
+  }, []);
   return (
     <LayoutTheme>
 

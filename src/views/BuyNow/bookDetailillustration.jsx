@@ -7,6 +7,9 @@ import { Player } from 'video-react';
 import { ReviewsBox } from '../../components/Reviews'
 
 export const BookDetailIllusrationPage = () => {
+    useEffect(() => {
+        document.title = 'Illustration Book Detail | The Best Books for Dog Lovers'; 
+      }, []);
     const { id } = useParams();
     const navigate = useNavigate();
 

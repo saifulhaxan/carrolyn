@@ -7,6 +7,10 @@ import { Player } from 'video-react';
 import { ReviewsBox } from '../../components/Reviews'
 
 export const BookDetailPage = () => {
+    useEffect(() => {
+        document.title = 'Story Book Detail | The Best Books for Dog Lovers'; 
+      }, []);
+
     const { id } = useParams();
     const navigate = useNavigate();
 

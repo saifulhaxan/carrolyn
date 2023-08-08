@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import LayoutTheme from '../Layout'
 import { SubHeader } from '../../components/SubHeader'
 import dogBanner from '/images/gallery-dog2.png'
@@ -7,6 +7,9 @@ import { ReviewsBox } from '../../components/Reviews'
 
 
 export const ReviewPage = () => {
+    useEffect(() => {
+        document.title = 'Reviews | The Best Books for Dog Lovers'; 
+      }, []);
     // Sample data array containing review data
     const feebackdata = [
         {

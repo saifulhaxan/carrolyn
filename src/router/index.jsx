@@ -10,7 +10,7 @@ import { ReviewPage } from "../views/Reviews";
 
 function AppRouter() {
     return (
-        <BrowserRouter basename="carrolynn">
+        <BrowserRouter basename="/">
             <Routes>
                 <Route path="/" element={<Home />} index />
                 <Route path="/about-us" element={<AboutPage />} />

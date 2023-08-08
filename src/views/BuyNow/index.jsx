@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { SubHeader } from '../../components/SubHeader'
 import dogBanner from '/images/contact-dog.png'
 import LayoutTheme from '../Layout'
@@ -229,6 +229,11 @@ const illustrationbooks = [
 ];
 
 export const BuyNow = () => {
+
+  useEffect(() => {
+    document.title = 'Buy Now | The Best Books for Dog Lovers'; 
+  }, []);
+
   const [firstBook, secondBook] = useState(false)
 
   function showFirstBook() {

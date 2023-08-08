@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import LayoutTheme from '../Layout'
 import { SubHeader } from '../../components/SubHeader'
 import dogBanner from '/images/contact-dog.png'
@@ -7,6 +7,10 @@ import { Gallery } from '../../components/Gallery'
 const GalleryImages = ['gallery-1.png', 'gallery-2.png', 'gallery-3.png', 'gallery-5.png', 'gallery-4.png', 'gallery-6.png', 'gallery-1.png', 'gallery-2.png', 'gallery-3.png', 'gallery-4.png', 'gallery-5.png', 'gallery-6.png']
 
 export const GalleryPage = () => {
+  useEffect(() => {
+    document.title = 'Gallery | The Best Books for Dog Lovers'; 
+  }, []);
+
   return (
     <LayoutTheme>
 

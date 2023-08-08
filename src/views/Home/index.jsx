@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import LayoutTheme from '../Layout'
 import { Banner } from '../../components/Banner'
@@ -149,6 +149,10 @@ const feebackdata = [
 
 
 export const Home = () => {
+  useEffect(() => {
+    document.title = 'Home | The Best Books for Dog Lovers'; 
+  }, []);
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
